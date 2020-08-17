@@ -26,3 +26,23 @@ SELECT Kurssi.nimi AS kurssi,Tehtävä Kurssitehtävä WHERE Kurssi.kurssitunnus
 # 13. tehtävä 
 
 SELECT Kurssi.nimi AS Kurssi, Tehtävä.nimi AS Tehtävä FROM Kurssi, Kurssitehtävä, Tehtävä, Tehtäväsuoritus, Opiskelija WHERE Kurssi.kurssitunnus = Kurssitehtävä,kurssi AND Tehtävä.tunnus = Kurssitehtävä AND Tehtäväsuoritus,tehtävä = Kurssitehtävä,tunnus AND Tehtäväsuoritus,opiskelija = Opiskelija.opiskelijanumero AND Opiskelija.nimi = 'Anna'
+
+# 14. tehtävä
+Ensimmäisenä koodissa etsitään tehtävä nimikkeitä toisessa eri oppilas nimiä joilla on annettu tehtävä koska oppilaita on enemmän kuin tehtävä vaikuttaa listan kokoon 
+
+# 15. tehtävä 
+SELECT nimi FROM Kurssi k LEFT JOIN Kurssitehtävä t ON k.kurssitunnus=t.kurssi WHERE t.tunnus IS NULL
+
+# 16. tehtävä
+SELECT k.nimi AS kurssi, COUNT(ks.kurssi) AS lukumäärä FROM Kurssi k,Kurssisuoritus ks WHERE k.kurssitunnus = ks.kurssi GROUP BY k.nimi
+
+# 17. tehtävä 
+SELECT K.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k LEFT JOIN Kurssisuoritus ks ON k.kurssuoritus = ks.kurssitunnus = ks.kurssi GROUP BY k.nimi
+
+# 18. tehtävä 
+
+
+
+
+
+# 20. tehtävä CREATE TABLE Kurssi53243 (tehtävä, kurssitunnus); PRAGMA TABLE _INFO (Kurssi4)
