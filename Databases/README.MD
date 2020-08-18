@@ -40,9 +40,47 @@ SELECT k.nimi AS kurssi, COUNT(ks.kurssi) AS lukumäärä FROM Kurssi k,Kurssisu
 SELECT K.nimi AS kurssi, COUNT(ks.kurssi) as lukumäärä FROM Kurssi k LEFT JOIN Kurssisuoritus ks ON k.kurssuoritus = ks.kurssitunnus = ks.kurssi GROUP BY k.nimi
 
 # 18. tehtävä 
+tehtävä: CREATE TABLE Kurssi123(kurssitunnus, nimi, kuvaus)
+
+
+# 19. tehtävä
+INSERT INTO Kurssi kurssitunnus, nimi kuvaus) VALUES ("12345", "SQL-kielen perusteet", "SELECT 'Hei maailma'.")
+
+
+# 20. tehtävä 
+ CREATE TABLE Kurssi53243 (tehtävä,
+kurssitunnus); PRAGMA TABLE _INFO (Kurssi4)
+
+# 21. tehtävä
+CREATE TABLE Kurssi4 (kurssitunnus, nimi kuvaus) tarkistus; PRAGMA TABLE_INFO(Kurssi4)
+
+# 22. tehtävä
+SELECT * FROM Opiskelija 
+
+# 23. tehtävä
+ CREATE TABLE Kurssi5 (kurssitunnus, nimi kuvaus)
+
+ # 24. tehtävä 
+ PRAGMA foreign_keys = ON;
+
+ # 25.tehtävä 
+  
+ PRAGMA foreign_keys =ON; CREATE TABLE Kurssi7 (kurssitunnus integer PRIMARY KEY, nimi varchar(200) NOT NULL, kuvaus varchar(3000) ); INSERT INTO Kurssi (nimi) VALUES ('Ohpe'); INSERT INTO Kurssi  (nimi VALUES  ('Tikape');
+   
+
+
+
+ # 26.tehtävä
+ ALTER TABLE -käsky käytetään olemassa olevan taulukon sarakkeiden lisäämiseen, poistamiseen tai muokkaamiseen. ALTER TABLE -käskyä käytetään myös lisäämään ja pudottamaan olemassa olevan taulukon erilaisia rajoituksia.
 
 
 
 
 
-# 20. tehtävä CREATE TABLE Kurssi53243 (tehtävä, kurssitunnus); PRAGMA TABLE _INFO (Kurssi4)
+
+
+
+
+
+
+
