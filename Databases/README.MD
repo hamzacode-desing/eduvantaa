@@ -1,8 +1,17 @@
-# 4. tehtävä
+ # 1.tehtävä 
+ porin ruotujakoinen tarkk'ampujapataljoona Tehtävä; Jääski- kastetut Lapsen etunimi; MATTI => Mathilda, Mats Tuli monta eri vaihtoehtoa mistä voi tarkistaa.
 
+ # 2. tehtävä
+ Annoin sähköpostiosoitteeni ja syntymäpäiväni moniin eri palveluihin
+
+ # 3. tehtävä
+
+
+
+# 4. tehtävä
 SELECT * FROM Kurssisuoritus
 
-# 5. Tehtävä
+# 5. tehtävä
 SELECT kurssi FROM Kurssisuoritus
 
 # 6. tehtävä
@@ -28,7 +37,7 @@ SELECT Kurssi.nimi AS kurssi,Tehtävä Kurssitehtävä WHERE Kurssi.kurssitunnus
 SELECT Kurssi.nimi AS Kurssi, Tehtävä.nimi AS Tehtävä FROM Kurssi, Kurssitehtävä, Tehtävä, Tehtäväsuoritus, Opiskelija WHERE Kurssi.kurssitunnus = Kurssitehtävä,kurssi AND Tehtävä.tunnus = Kurssitehtävä AND Tehtäväsuoritus,tehtävä = Kurssitehtävä,tunnus AND Tehtäväsuoritus,opiskelija = Opiskelija.opiskelijanumero AND Opiskelija.nimi = 'Anna'
 
 # 14. tehtävä
-Ensimmäisenä koodissa etsitään tehtävä nimikkeitä toisessa eri oppilas nimiä joilla on annettu tehtävä koska oppilaita on enemmän kuin tehtävä vaikuttaa listan kokoon 
+Ensimmäisenä koodissa etsitään tehtävä nimikkeitä toisessa eri oppilas nimiä joilla on annettu tehtävä koska oppilaita on enemmän kuin tehtävä vaikuttaa listan kokoon.
 
 # 15. tehtävä 
 SELECT nimi FROM Kurssi k LEFT JOIN Kurssitehtävä t ON k.kurssitunnus=t.kurssi WHERE t.tunnus IS NULL
